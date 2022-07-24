@@ -456,23 +456,23 @@
 
     <!-- backdrop -->
 
-    <div class="backdrop is-hidden" data-modal>
-      <div class="modal modal-cnt">
+    <div class="backdrop backdrop--is-hidden" data-modal>
+      <div class="modal">
         <button data-modal-close type="button" class="button-close">
-          <svg class="icon-close" width="11" height="11">
+          <svg class="button-close__icon" width="11" height="11">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form class="modal-form" name="modal-form" autocomplete="on">
-          <h2 class="title modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+          <h2 class="title modal-form__title">Оставьте свои данные, мы вам перезвоним</h2>
           <div role="group" class="modal-form-group">
-            <label class="modal-form-label" for="user-name">Имя</label>
-            <div class="modal-form-cnt">
-              <svg class="modal-icon" width="18" height="18">
+            <label class="modal-form-group__label" for="user-name">Имя</label>
+            <div class="modal-form-group__container">
+              <svg class="modal-form-group__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-men"></use>
               </svg>
               <input
-                class="modal-form-input"
+                class="modal-form-group__input"
                 type="text"
                 name="user-name"
                 id="user-name"
@@ -480,48 +480,53 @@
                 autofocus
               />
             </div>
-            <label class="modal-form-label" for="user-phone">Телефон</label>
-            <div class="modal-form-cnt">
-              <svg class="modal-icon" width="18" height="18">
+            <label class="modal-form-group__label" for="user-phone">Телефон</label>
+            <div class="modal-form-group__container">
+              <svg class="modal-form-group__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               <input
-                class="modal-form-input"
+                class="modal-form-group__input"
                 type="tel"
                 name="user-phone"
                 id="user-phone"
                 required
               />
             </div>
-            <label class="modal-form-label" for="user-email">Почта</label>
-            <div class="modal-form-cnt">
-              <svg class="modal-icon" width="18" height="18">
+            <label class="modal-form-group__label" for="user-email">Почта</label>
+            <div class="modal-form-group__container">
+              <svg class="modal-form-group__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-email-2"></use>
               </svg>
-              <input class="modal-form-input" type="email" name="user-email" id="user-email" />
+              <input
+                class="modal-form-group__input"
+                type="email"
+                name="user-email"
+                id="user-email"
+              />
             </div>
-            <label class="modal-form-label comment-label" for="user-comment">Комментарий</label>
+            <label class="modal-form-group__label" for="user-comment">Комментарий</label>
             <textarea
-              class="modal-form-textarea"
+              class="modal-form-group__textarea"
               name="user-comment"
               id="user-comment"
               rows="3"
               placeholder="Введите текст"
             ></textarea>
 
-            <label class="form-agreement-label">
-              <input class="form-agreement-input" type="checkbox" name="user-agreement" required />
+            <label class="form-agreement">
+              <input class="form-agreement__input" type="checkbox" name="user-agreement" required />
               Соглашаюсь с рассылкой и принимаю
-              <a class="agreement-link" href="#">Условия договора</a>
+              <a class="form-agreement__link" href="#">Условия договора</a>
 
-              <svg class="icon-frame" width="16" height="15">
+              <svg class="form-agreement__icon-frame" width="16" height="15">
                 <use href="./images/icons.svg#icon-frame"></use>
               </svg>
-              <svg class="icon-check" width="16" height="15">
+              <svg class="form-agreement__icon-check" width="16" height="15">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </label>
-            <button class="button modal-form-button" type="submit">Отправить</button>
+            <button class="button" type="submit">Отправить</button>
           </div>
         </form>
       </div>

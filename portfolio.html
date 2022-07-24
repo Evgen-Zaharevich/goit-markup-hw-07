@@ -64,26 +64,30 @@
 
           <!--Фильтр кнопок-->
 
-          <ul class="button-list list">
-            <li class="item">
-              <button type="button" class="button-list__button active-btn">Все</button>
+          <ul class="button-filter list">
+            <li class="button-filter__item">
+              <button type="button" class="button button-filter__part button-filter__part--active">
+                Все
+              </button>
             </li>
-            <li class="item">
-              <button type="button" class="button-list__button">Веб-сайты</button>
+            <li class="button-filter__item">
+              <button type="button" class="button button-filter__part">Веб-сайты</button>
             </li>
-            <li class="item">
-              <button type="button" class="button-list__button">Приложения</button>
+            <li class="button-filter__item">
+              <button type="button" class="button button-filter__part">Приложения</button>
             </li>
-            <li class="item"><button type="button" class="button-list__button">Дизайн</button></li>
-            <li class="item">
-              <button type="button" class="button-list__button">Маркетинг</button>
+            <li class="button-filter__item">
+              <button type="button button" class="button button-filter__part">Дизайн</button>
+            </li>
+            <li class="button-filter__item">
+              <button type="button" class="button button-filter__part">Маркетинг</button>
             </li>
           </ul>
 
           <!-- Примеры работ -->
 
           <ul class="work-list list">
-            <li class="work-list-card card item">
+            <li class="work-list-card item">
               <div class="work-card-img">
                 <div class="work-card-cnt">
                   <p class="text card-text">
@@ -287,64 +291,86 @@
 
     <!--Подвал-->
 
-    <footer class="footer-line">
-      <div class="container footer-container">
-        <div class="footer-links">
-          <a href="index.html" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
+    <footer class="footer">
+      <div class="container footer__container">
+        <div>
+          <a href="index.html" class="logo footer__logo"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
           <address>
-            <ul class="footer-list list">
-              <li class="item">
+            <ul class="footer-contact list">
+              <li class="footer-contact__item">
                 <a
                   href="https://goo.gl/maps/cAfCM62VBtgG5pma7"
-                  class="footer-address link"
+                  class="footer-contact__address link footer-contact__link"
                   target="_blank"
                   rel="noopener noreferrer"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="maito:info@example.com" class="link">info@example.com</a>
+              <li class="footer-contact__item">
+                <a href="maito:info@example.com" class="link footer-contact__link"
+                  >info@example.com</a
+                >
               </li>
-              <li class="item">
-                <a href="tel:+380991111111" class="link">+38 099 111 11 11</a>
+              <li class="footer-contact__item">
+                <a href="tel:+380991111111" class="link footer-contact__link">+38 099 111 11 11</a>
               </li>
             </ul>
           </address>
         </div>
 
         <div class="footer-cta">
-          <h3 class="footer-title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="footer-social-list list">
-            <li class="social-item">
-              <a class="team-link" href="https://www.instagram.com">
-                <svg class="team-icon" width="20" height="20">
+          <h3 class="footer-cta__title title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="social list">
+            <li class="social__item">
+              <a class="social__link footer-social__link" href="https://www.instagram.com">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="team-link" href="https://twitter.com/">
-                <svg class="team-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link footer-social__link" href="https://twitter.com/">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="team-link" href="https://www.facebook.com/">
-                <svg class="team-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link footer-social__link" href="https://www.facebook.com/">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="social-item">
-              <a class="team-link" href="https://www.linkedin.com/">
-                <svg class="team-icon" width="20" height="20">
+            <li class="social__item">
+              <a class="social__link footer-social__link" href="https://www.linkedin.com/">
+                <svg class="footer-social__icon" width="20" height="20">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
+        <form class="subscrible" name="subscrible" autocomplete="on">
+          <label class="subscrible__email" for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+          <div class="subscrible__container">
+            <input
+              class="subscrible__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
+            <button class="button subscrible__button" type="submit">
+              Подписаться
+              <svg class="subscrible__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
   </body>
