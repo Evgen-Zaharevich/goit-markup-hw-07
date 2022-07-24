@@ -842,7 +842,7 @@ p {
 
 /* Примеры работ */
 
-.work-list .title {
+.card__title {
   margin-bottom: 4px;
 
   font-size: 18px;
@@ -851,14 +851,14 @@ p {
   text-align: inherit;
 }
 
-.work-list .text {
+.card__meta-text {
   margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.87;
 }
 
-.work-list {
+.card-set {
   display: flex;
   flex-wrap: wrap;
 
@@ -866,19 +866,19 @@ p {
   margin-top: calc(-1 * var(--work-list-gap));
 }
 
-.work-list > .item {
+.card-set__item {
   flex-basis: calc(100% / 3 - var(--work-list-gap));
 
   margin-left: var(--work-list-gap);
   margin-top: var(--work-list-gap);
 }
 
-.work-card-img {
+.card__img {
   position: relative;
   overflow: hidden;
 }
 
-.work-card-cnt::after {
+.card__container::after {
   position: absolute;
   content: '';
   bottom: -100%;
@@ -891,12 +891,12 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-list-card:hover .work-card-cnt::after,
-.work-list-card:focus .work-card-cnt::after {
+.card:hover .card__container::after,
+.card:focus .card__container::after {
   transform: translateY(-100%);
 }
 
-.work-list-card .card-text {
+.card__text {
   position: absolute;
   width: 322px;
   height: 168px;
@@ -912,12 +912,12 @@ p {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.work-list-card:hover .card-text,
-.work-list-card:focus .card-text {
+.card:hover .card__text,
+.card:focus .card__text {
   transform: translateY(-227px);
 }
 
-.card-content {
+.card__meta {
   border: 1px solid #eeeeee;
   border-top: none;
   padding: 20px 24px;
